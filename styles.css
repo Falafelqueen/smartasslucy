@@ -1,0 +1,124 @@
+
+.container{
+  position:relative;
+ margin:25px auto;
+ display:flex;
+ width:80vw;
+ height:100%;
+ padding:10px;
+}
+
+.img-holder{
+  position:absolute;
+  left: 20%;
+}
+
+img {
+ height:650px;
+ transform: scaleX(-1);
+}
+
+@media (max-width: 650px){
+ .img{
+   height:250px
+ }
+}
+
+.buttons-holder {
+ display:flex;
+ flex-direction: row;
+ justify-content:space-evenly;
+ align-items: center;
+ padding:20px;
+ margin:10px
+}
+
+.advice-holder{
+ border:indigo;
+ width:300px;
+ padding:15px;
+ margin:20px auto 10px;
+ border-radius: 10px;
+}
+
+.bubble {
+	position: relative;
+	width: 350px;
+	text-align: center;
+	line-height: 1.4em;
+	margin: 40px auto;
+	background-color: #fff;
+	border: 8px solid  #333;
+	border-radius: 200px;
+	padding: 25px 30px;
+	font-size: large;
+}
+
+
+.bubble:before,
+.bubble:after {
+  content: "";
+  position: absolute;
+	right: -35px;
+	bottom: 65px;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	border: 8px solid #333;
+	-webkit-border-radius: 28px;
+	-moz-border-radius: 28px;
+	border-radius: 30px;
+}
+
+.bubble:after {
+	width: 30px;
+	height: 30px;
+	right: -65px;
+	bottom: 45px;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 50%;
+}
+
+
+.btn{
+ color:white;
+ font-weight: bold;
+ border-radius: 10px;
+ padding: 15px 25px;
+ transition: 0.5s linear;
+ border: none;
+ background-color: rgb(27, 0, 78,0.9);
+ box-shadow: 0px 0px 5px grey;
+ margin:5px;
+}
+
+.btn:hover{
+ transform: scale(1.05);
+ cursor: pointer;
+ color:white;
+ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.shaking {
+ animation: shake 0.5s;
+ animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.hidden{
+  visibility: hidden;
+}
