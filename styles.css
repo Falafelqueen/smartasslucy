@@ -11,6 +11,7 @@
 .img-holder{
   position:absolute;
   left: 20%;
+  z-index: -1;
 }
 
 img {
